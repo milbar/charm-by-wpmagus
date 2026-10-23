@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "WPMagus\Charm\\": "src/"
+      "WPMagus\\Charm\\": "src/"
     }
   },
   "require": {
