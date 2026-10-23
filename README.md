@@ -7,11 +7,11 @@ Must-use plugin of the Charm sites. It replaces `milbar-muplugin` and `milbar-br
 In a Bedrock project (the plugin is `type: wordpress-muplugin`, so Composer puts it into `web/app/mu-plugins/`):
 
 ```json
-"repositories": [{ "type": "vcs", "url": "https://github.com/milbareu/charm-by-wpmagus" }]
+"repositories": [{ "type": "vcs", "url": "https://github.com/milbar/charm-by-wpmagus" }]
 ```
 
 ```bash
-composer require milbareu/charm-by-wpmagus
+composer require milbar/charm-by-wpmagus
 ```
 
 No Composer step at runtime: the plugin loads its own classes (`WPMagus\Charm\` => `src/`). Bedrock's autoloader picks it up from `mu-plugins/charm-by-wpmagus/`.
