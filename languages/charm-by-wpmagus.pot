@@ -1,0 +1,85 @@
+# Copyright (C) 2026 WPMágus
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Charm by WPMágus 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/charm-by-wpmagus\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-23T14:17:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 3.0.0-alpha-f0155d0\n"
+"X-Domain: charm-by-wpmagus\n"
+
+#. Plugin Name of the plugin
+#: charm-by-wpmagus.php:3
+msgid "Charm by WPMágus"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: charm-by-wpmagus.php:4
+#: charm-by-wpmagus.php:8
+msgid "https://wpmagus.hu"
+msgstr ""
+
+#. Description of the plugin
+#: charm-by-wpmagus.php:5
+msgid "Must-use plugin of the Charm sites: security and admin hardening, WPMágus branding, and the basic site settings (logo, social profiles)."
+msgstr ""
+
+#. Author of the plugin
+#: charm-by-wpmagus.php:7
+msgid "WPMágus"
+msgstr ""
+
+#: src/Admin/Admin.php:72
+msgid "WP Version"
+msgstr ""
+
+#: src/Admin/Admin.php:75
+msgid "WP_ENV"
+msgstr ""
+
+#: src/Admin/Admin.php:79
+msgid "Build Date"
+msgstr ""
+
+#: src/Admin/Admin.php:86
+msgid "Commit"
+msgstr ""
+
+#: src/Admin/Admin.php:90
+msgid "Release"
+msgstr ""
+
+#: src/Settings/Settings.php:101
+msgid "Charm settings"
+msgstr ""
+
+#: src/Settings/Settings.php:102
+msgid "Charm"
+msgstr ""
+
+#: src/Settings/Settings.php:110
+msgid "Brand"
+msgstr ""
+
+#: src/Settings/Settings.php:113
+msgid "Logo"
+msgstr ""
+
+#: src/Settings/Settings.php:116
+msgid "Shown in the site header and on the login screen. Empty: the logo set in the Site Editor, else the theme's own."
+msgstr ""
+
+#: src/Settings/Settings.php:134
+msgid "Link to the Google Business Profile (the share link is fine)."
+msgstr ""
+
+#: src/Settings/Settings.php:141
+msgid "Social profiles"
+msgstr ""

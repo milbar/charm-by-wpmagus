@@ -1,0 +1,34 @@
+#adminmenu li.wp-menu-separator {
+    padding: 0;
+    cursor: inherit;
+    background: #666666;
+    height: 1px;
+    margin: 8px 4px;
+}
+
+.postbox.acf-postbox.seamless .acf-tab-wrap.-top {
+    padding-left: 0;
+    background: #f1f1f1;
+    margin-bottom: 0;
+}
+
+.postbox.acf-postbox.seamless .acf-tab-wrap.-top .acf-tab-group {
+    width: calc(100% - 8px);
+}
+
+.postbox.acf-postbox.seamless {
+    border-width: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    padding: 0 12px;
+}
+
+.acf-postbox.seamless > .inside > .acf-field {
+    border: 1px solid #ccd0d4 !important;
+    border-top-width: 0 !important;
+}
+
+.post-type-acf-field-group #wpb_visual_composer,
+.post-type-acf-field-group .composer-switch {
+    display: none !important;
+}

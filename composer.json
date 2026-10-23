@@ -1,0 +1,21 @@
+{
+  "name": "milbareu/charm-by-wpmagus",
+  "description": "Must-use plugin of the Charm sites: security and admin hardening, WPMágus branding, basic site settings (logo, social profiles).",
+  "homepage": "https://wpmagus.hu",
+  "license": "MIT",
+  "type": "wordpress-muplugin",
+  "authors": [
+    {
+      "name": "Milan Bartalovics",
+      "homepage": "https://github.com/milbar"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WPMagus\Charm\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1"
+  }
+}

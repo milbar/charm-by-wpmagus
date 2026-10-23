@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Charm by WPMágus 1.0.0\n"
+"Last-Translator: WPMágus\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: charm-by-wpmagus\n"
+
+msgid "Must-use plugin of the Charm sites: security and admin hardening, WPMágus branding, and the basic site settings (logo, social profiles)."
+msgstr "A Charm oldalak kötelezően használt bővítménye: biztonsági és admin finomhangolás, WPMágus arculat, valamint az alap webhelybeállítások (logó, közösségi profilok)."
+
+msgid "WP Version"
+msgstr "WP verzió"
+
+msgid "Build Date"
+msgstr "Build dátuma"
+
+msgid "Release"
+msgstr "Kiadás"
+
+msgid "Charm settings"
+msgstr "Charm beállítások"
+
+msgid "Brand"
+msgstr "Arculat"
+
+msgid "Logo"
+msgstr "Logó"
+
+msgid "Shown in the site header and on the login screen. Empty: the logo set in the Site Editor, else the theme's own."
+msgstr "Megjelenik az oldal fejlécében és a belépő képernyőn. Ha üres: a Webhelyszerkesztőben beállított logó, különben a sablon saját logója."
+
+msgid "Link to the Google Business Profile (the share link is fine)."
+msgstr "A Google Cégprofil linkje (a megosztási link is jó)."
+
+msgid "Social profiles"
+msgstr "Közösségi profilok"
