@@ -38,3 +38,6 @@ msgstr "A Google Cégprofil linkje (a megosztási link is jó)."
 
 msgid "Social profiles"
 msgstr "Közösségi profilok"
+
+msgid "Website by WPMágus (opens in a new tab)"
+msgstr "A weboldalt készítette: WPMágus (új lapon nyílik meg)"

@@ -3,7 +3,7 @@
 Plugin Name: Charm by WPMágus
 Plugin URI: https://wpmagus.hu
 Description: Must-use plugin of the Charm sites: security and admin hardening, WPMágus branding, and the basic site settings (logo, social profiles).
-Version: 1.0.2
+Version: 1.1.0
 Author: WPMágus
 Author URI: https://wpmagus.hu
 License: MIT
@@ -16,7 +16,7 @@ if (! defined('ABSPATH')) {
 
 define('CHARM_BY_WPMAGUS_DIR', plugin_dir_path(__FILE__));
 define('CHARM_BY_WPMAGUS_URL', plugin_dir_url(__FILE__));
-define('CHARM_BY_WPMAGUS_VERSION', '1.0.2');
+define('CHARM_BY_WPMAGUS_VERSION', '1.1.0');
 
 // No Composer step: one tiny PSR-4 loader for WPMagus\Charm\ => src/
 spl_autoload_register(static function (string $class): void {
