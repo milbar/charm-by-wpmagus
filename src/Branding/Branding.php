@@ -8,7 +8,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-/** Admin and login screen look. The login logo is the site's own (Settings > Charm), the bundled emblem as fallback. */
+/** Admin and login screen look. The login logo is the site's own (Settings > Charm), the bundled WPMágus wordmark as fallback. */
 class Branding
 {
     public static function init(): void
@@ -36,7 +36,7 @@ class Branding
         wp_enqueue_style('charm-by-wpmagus/login', CHARM_BY_WPMAGUS_URL.'assets/css/login.css', [], CHARM_BY_WPMAGUS_VERSION);
 
         $logo = Settings::logoId() ? wp_get_attachment_image_url(Settings::logoId(), 'medium') : '';
-        $logo = $logo ?: CHARM_BY_WPMAGUS_URL.'assets/img/logo-mark.svg';
+        $logo = $logo ?: CHARM_BY_WPMAGUS_URL.'assets/img/logo.svg';
 
         wp_add_inline_style('charm-by-wpmagus/login', 'body.login h1 a{background-image:url("'.esc_url_raw($logo).'")}');
     }

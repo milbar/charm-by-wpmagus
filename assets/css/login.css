@@ -1,12 +1,14 @@
 :root {
-    --charm-blue: #2563eb;
-    --charm-blue-dark: #1e40af;
+    --charm-blue: #2447b8; /* AAA on white; brand blue #3462ED is for large elements */
+    --charm-blue-dark: #362262;
+    --charm-purple: #362262;
     --charm-green: #679f37;
     --charm-yellow: #fbc02d;
     --charm-red: #fb2d34;
 }
 
 body.login {
+    background: #f7f7fb;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
     line-height: 1.2;
     display: flex;
@@ -31,7 +33,7 @@ body.login h1 a {
     margin-bottom: 1rem;
     width: auto;
     max-width: 100%;
-    height: 72px;
+    height: 64px;
 }
 
 body.login form {
@@ -50,8 +52,8 @@ body.login #nav > a {
     line-height: 1;
     padding: 6px 12px;
     cursor: pointer;
-    border: 1px solid #5A5A5A;
-    background-color: #5A5A5A;
+    border: 1px solid var(--charm-purple);
+    background-color: var(--charm-purple);
     transition: 0.2s ease-in-out;
     color: #fff;
     border-radius: 3px;
@@ -64,8 +66,8 @@ body.login #nav > a {
 }
 
 body.login #nav > a:hover {
-    border: 1px solid #000;
-    background-color: #000;
+    border: 1px solid #232323;
+    background-color: #232323;
     transition: 0.2s ease-in-out;
     color: #fff;
 }
