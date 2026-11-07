@@ -41,3 +41,21 @@ msgstr "Közösségi profilok"
 
 msgid "Website by WPMágus (opens in a new tab)"
 msgstr "A weboldalt készítette: WPMágus (új lapon nyílik meg)"
+
+msgid "Content transfer"
+msgstr "Tartalomátvitel"
+
+msgid "Result"
+msgstr "Eredmény"
+
+msgid "Apply (unchecked it is a dry run that lists what would change)"
+msgstr "Végrehajtás (kipipálás nélkül csak szárazon lefut, és kilistázza, mi változna)"
+
+msgid "Also overwrite content that was edited here by hand"
+msgstr "A kézzel módosított tartalmak felülírása is"
+
+msgid "Upload and run"
+msgstr "Feltöltés és futtatás"
+
+msgid "No permission or no file."
+msgstr "Nincs jogosultság vagy fájl."

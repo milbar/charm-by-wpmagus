@@ -87,3 +87,27 @@ msgstr ""
 #: src/Settings/Settings.php:150
 msgid "Social profiles"
 msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "Content transfer"
+msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "Result"
+msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "Apply (unchecked it is a dry run that lists what would change)"
+msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "Also overwrite content that was edited here by hand"
+msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "Upload and run"
+msgstr ""
+
+#: src/Transfer/Transfer.php
+msgid "No permission or no file."
+msgstr ""

@@ -24,6 +24,7 @@ No Composer step at runtime: the plugin loads its own classes (`WPMagus\Charm\` 
 | `Development` | no Yoast "search engines discouraged" notice outside production, WP Rocket does not write `WP_CACHE` |
 | `Branding` | no WP logo in the admin bar, admin and login styles, the login screen shows the site logo and links home, "Made with ❤ by WPMágus" admin footer |
 | `Credit` | the "website by WPMágus" logo link: `charm_credit()` and `[charm_credit]`, styled with CSS variables |
+| `Transfer` | content export / import between environments (local to staging or production) without a database migration, see below |
 | `Settings` | ACF options page **Settings > Charm**: logo and social profile URLs (Facebook, LinkedIn, Google Business Profile, Instagram, TikTok, Threads); feeds Yoast's organisation profiles |
 
 ## Template API
@@ -65,6 +66,26 @@ The look can be changed without touching the plugin: set CSS variables on the li
 ```css
 .footer .charm-credit { --charm-credit-opacity: .5; --charm-credit-hover-filter: none; }
 ```
+
+## Content transfer
+
+Moves finished content between environments: posts of any type (pages, posts, WooCommerce products with their variations, custom types), their terms, meta and featured image, and optionally the ACF options pages.
+
+```bash
+wp charm content export --type=product,faq,page --options --file=bundle.zip   # local: content.json + the original files
+wp charm content import bundle.zip                                            # remote: dry run, lists what would change
+wp charm content import bundle.zip --apply                                    # writes it (--force: also overwrite hand-edited items)
+```
+
+Also in the admin: Tools > Content transfer (upload the zip; leave "Apply" unchecked for a dry run). Upload the zip by SFTP and run the import over SSH for big bundles.
+
+- Items are matched by post type and slug, product variations by their attribute values, so a re-run never duplicates.
+- Images are matched by the SHA-1 of the file (a file already in the library with the same name and bytes is reused), so each is uploaded once. Ids of images, files, galleries, other posts and terms in content, in ACF fields (the field type is read from ACF itself, so any theme works) and in WooCommerce / Yoast meta are written as tokens and mapped back by hash and slug on the other side. Absolute site URLs are stored as `{{SITE}}`.
+- An item that was edited on the target after the last import (its fingerprint covers title, excerpt, content, status and the meta of the bundle) is a conflict and is skipped unless `--force`. An item that no import has written yet counts as edited: the first import over existing content needs `--force`.
+- Not carried: menus, plugin settings, WooCommerce attribute definitions (their terms are), users, comments, orders, ACF blocks' references to other posts (the export warns).
+- Filters: `charm/transfer/default_types` (the types exported without `--type`, default `post, faq`), `charm/transfer/media_meta_keys`, `charm/transfer/post_meta_keys` (non-ACF meta that holds attachment / post ids).
+
+The first version of this lived in the wpmagus theme (`Charm\Modules\ContentTransfer`). While a theme still ships that class the plugin stays out of the way; remove the theme module to switch over.
 
 ## Needs
 
