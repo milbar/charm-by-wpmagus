@@ -8,7 +8,7 @@ if (! defined('ABSPATH')) {
 
 /**
  * Boots every component. Security, Admin, Content and Development carry over the features of the former
- * milbar-muplugin, Branding those of milbar-branding; Settings (logo and social profiles), Credit (the WPMágus credit logo) and Transfer (content export / import between environments) are new.
+ * milbar-muplugin, Branding those of milbar-branding; Settings (logo and social profiles), Credit (the WPMágus credit logo), Environment (test-system notice) and Transfer (content export / import between environments) are new.
  */
 class Plugin
 {
@@ -24,6 +24,7 @@ class Plugin
         Settings\Settings::init();
         Credit\Credit::init();
         Transfer\Transfer::init();
+        Environment\TestNotice::init();
     }
 
     public static function loadTextDomain(): void

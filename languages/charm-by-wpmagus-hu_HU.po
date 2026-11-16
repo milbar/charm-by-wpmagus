@@ -59,3 +59,9 @@ msgstr "Feltöltés és futtatás"
 
 msgid "No permission or no file."
 msgstr "Nincs jogosultság vagy fájl."
+
+msgid "This is a test system, not the live website. The content and data on it are not real."
+msgstr "Ez egy teszt rendszer, nem az éles weboldal. Az itt látható tartalom és adatok nem valósak."
+
+msgid "Test system"
+msgstr "Teszt rendszer"

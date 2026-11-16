@@ -24,6 +24,7 @@ No Composer step at runtime: the plugin loads its own classes (`WPMagus\Charm\` 
 | `Development` | no Yoast "search engines discouraged" notice outside production, WP Rocket does not write `WP_CACHE` |
 | `Branding` | no WP logo in the admin bar, admin and login styles, the login screen shows the site logo and links home, "Made with ❤ by WPMágus" admin footer |
 | `Credit` | the "website by WPMágus" logo link: `charm_credit()` and `[charm_credit]`, styled with CSS variables |
+| `Environment` | test-system notice: an amber bar on every page, a notice in the admin and on the login screen on every environment that is not `production` (`WP_ENV`, else `WP_ENVIRONMENT_TYPE`; shown too when neither is set). Filters `charm_test_notice` (force on/off), `charm_test_notice_css` |
 | `Transfer` | content export / import between environments (local to staging or production) without a database migration, see below |
 | `Settings` | ACF options page **Settings > Charm**: logo and social profile URLs (Facebook, LinkedIn, Google Business Profile, Instagram, TikTok, Threads); feeds Yoast's organisation profiles |
 
